@@ -1,0 +1,46 @@
+.navbar {
+	overflow:hidden;
+	background-color: none;
+	border-style: none;
+	border-color: transparent; 
+	box-shadow:  0 4px 8px 0 rgba(0,0,0,0.3);
+}
+.navbar-nav{
+	padding:13px;
+	line-height: 80px;
+}
+
+.navbar-brand{
+	padding: 25px;
+	height: 80px;
+	line-height: 80px;
+}
+#menu {
+	background: transparent;
+	border: 0;
+	padding-top: 20px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: black;
+}
+.bar1 {
+	margin: 25% 0%;
+	transition: 0.3s; 
+}
+
+.bar2 {
+	margin: 25% 0%;
+	transition: 0.3s; 
+}
+
+.bar3 {
+	margin: 25% 0%;
+	transition: 0.3s;
+}
+#myNav>ul>li>a {
+	font-family: 'Merriweather', serif;
+	font-size:120%;
+	color:#000;
+	font-weight: bold;
+}
