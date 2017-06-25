@@ -7,12 +7,14 @@ import { Component } from '@angular/core';
 })
 
 export class SideBarComponent {
-	public my_Class = 'sidebar-wrapper';
+	public logourl = 'assets/navbar/wiprodigitallogo.png';
+	public sidenav_width = '0px';
+
 	toggleClass() {
-		if(this.my_Class=="sidebar-wrapper"){
-			this.my_Class='sidebar-enlarged';
+		if(this.sidenav_width=='0px') {
+			this.sidenav_width = '250px';
 		}else{
-			this.my_Class='sidebar-wrapper';
+			this.sidenav_width='0px';
 		}
 	}
 }

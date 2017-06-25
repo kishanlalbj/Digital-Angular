@@ -1,13 +1,67 @@
-<div [className]='my_Class' id="sidebar-wrapper" on-mouseenter=toggleClass() on-mouseleave=toggleClass()>
+<!-- Horizontal NAV -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			
+			<a (click)=toggleClass()>
+				<span  class="navbar-brand glyphicon glyphicon-menu-hamburger"></span>
+			</a>
+
+			<a href="#" class="navbar-brand">
+				<img [src]="logourl" width="150px" >
+			</a>
+		</div>
+
+		<div class="navbar-collapse collapse" id="myNav">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Programs</a></li>
+				<li><a href="#">Register</a></li>
+				<li><a href="#">Products</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+
+<!-- Side Nav -->
+<div [style.width]=sidenav_width class="sidebar-wrapper" id="sidebar-wrapper">
+	
+	<div class="col-sm-12 col-xs-12 ">
+		<div class="col-sm-4 col-xs-4 avatar" >
+			<img src="assets/navbar/person-flat.png" width="100%" alt="avatar" class="img-rounded">
+		</div>
+		<div class="col-sm-8 col-xs-8 profile-details">
+			<span>Kishanlal B J (Admin)</span>
+		</div>
+	</div>
+	
 	<div  class="sidebar-nav">
 		<li>
-			<a href="#"><span class="glyphicon glyphicon-home"> Home</span></a>
+			<a href="#" >
+				<span class="glyphicon glyphicon-home"> Home</span>
+			</a>
 		</li>
 		<li>
-			<a href="#">Programs</a>
+			<a href="#">
+				<span class="glyphicon glyphicon-blackboard"> Programs</span>
+			</a>
 		</li>
 		<li>
-			<a href="#">Register</a>
+			<a href="#">
+				<span class="glyphicon glyphicon-picture"> Gallery </span>
+
+			</a>
 		</li>
+		<li>
+			<a href="#">
+				<span class="glyphicon glyphicon-education"> Gradutes</span>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<span class="glyphicon glyphicon-briefcase"> Products</span>
+			</a>
+		</li> 
 	</div>
 </div>

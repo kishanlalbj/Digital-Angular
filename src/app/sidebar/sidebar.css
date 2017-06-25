@@ -1,41 +1,57 @@
-.sidebar-wrapper{
-	z-index:1;
-	position: absolute;
-	width:150px;
-	height: 100%;
-	overflow-y:hidden;
-	background:#2C3E50;
-	border: 2px solid;
-	transition: width 0.5s;
+.navbar {
+	overflow:hidden;
+	background-color: none;
+	border-style: none;
+	border-color: transparent; 
+	box-shadow:  0 1px 3px 0 rgba(0,0,0,0.3);
 }
 
-.sidebar-enlarged {
-	z-index:1;
-	align-content: center;
-	position: absolute;
-	width:250px;
-	height: 100%;
-	overflow-y:hidden;
-	background:#2C3E50;
-	border: 2px solid;
-	-webkit-transition: width 0.5s; /* Safari */
-	transition: width 0.5s;
+.navbar-brand{
+	padding-top: 10px;
 }
-.sidebar-nav{
-	padding: 0;
+
+.menubtn {
+	background:transparent;
+	border: none;
+	border-style: none;
+}
+.nostyle{
 	list-style: none;
 }
-
-.sidebar-nav li {
-	text-indent: 20px;
-	line-height: 40px;
+.sidebar-wrapper{
+	margin-top:50px;
+	z-index:1;
+	position: fixed;
+	height: 100%;
+	overflow-y:auto;
+	background:#2C3E50;
+	border: 0px solid;
+	transition: width 0.5s;
 }
 
-.sidebar-nav li a{
+.sidebar-nav{
+	/*padding-top: 5px;*/
+	list-style: none;
+	margin-top:30%;
+}
+.sidebar-nav  li a{
 	color: #ddd;
+	padding:20px;
 	text-decoration: none;
+	font-size: 150%;
+	display: block;
+	transition: 0.3s
 }
 
 .sidebar-nav li:hover {
 	background:#16A085;
+}
+.avatar{
+	padding:10px;
+}
+.profile-details{
+	padding:20px;
+	color: #ddd;
+	font-size: 130%;
+
 }
