@@ -1,9 +1,18 @@
 .navbar {
 	overflow:hidden;
+	background:#f2f2f2;
 	background-color: none;
 	border-style: none;
 	border-color: transparent; 
 	box-shadow:  0 1px 3px 0 rgba(0,0,0,0.3);
+	transition: height 0.3s;
+}
+.navbar-nav {
+	font-size: 120%;
+	font-weight: bold;
+	text-decoration: none;
+	display: block;
+	
 }
 
 .navbar-brand{
@@ -26,13 +35,13 @@
 	overflow-y:auto;
 	background:#2C3E50;
 	border: 0px solid;
-	transition: width 0.5s;
+	transition: width 0.3s;
 }
 
 .sidebar-nav{
 	/*padding-top: 5px;*/
 	list-style: none;
-	margin-top:30%;
+	margin-top:35%;
 }
 .sidebar-nav  li a{
 	color: #ddd;
