@@ -1,0 +1,23 @@
+<nav [style.height]=height class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+		<div class="navbar-header">
+
+			<!-- <a (click)=toggleClass()>
+				<span  class="navbar-brand glyphicon glyphicon-menu-hamburger"></span>
+			</a> -->
+
+			<a href="#" class="navbar-brand">
+				<img [src]="logourl" width="150px" >
+			</a>
+		</div>
+
+		<div class="navbar-collapse collapse" id="myNav">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#" (click)=expand()>Home</a></li>
+				<li><a href="#" (click)=expand()>Programs</a></li>
+				<li><a href="#">Register</a></li>
+				<li><a href="#">Products</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>

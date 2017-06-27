@@ -1,48 +1,59 @@
-<!-- Horizontal NAV -->
-<nav [style.height]=height class="navbar navbar-default navbar-fixed-top" role="navigation">
-	<div class="container-fluid">
-		<div class="navbar-header">
-			
-			<a (click)=toggleClass()>
-				<span  class="navbar-brand glyphicon glyphicon-menu-hamburger"></span>
-			</a>
-
-			<a href="#" class="navbar-brand">
-				<img [src]="logourl" width="150px" >
-			</a>
-		</div>
-
-		<div class="navbar-collapse collapse" id="myNav">
-			<ul class="nav navbar-nav navbar-right">
-				
-				<li><a href="#" (click)=expand()>Home</a></li>
-				<li><a href="#" (click)=expand()>Programs</a></li>
-				<li><a href="#">Register</a></li>
-				<li><a href="#">Products</a></li>
-			</ul>
-		</div>
-
-		
-	</div>
-</nav>
 
 
 <!-- Side Nav -->
-<div [style.width]=sidenav_width class="sidebar-wrapper" on-mouseleave=toggleClass() id="sidebar-wrapper">
+<div class="col-sm-12">
 
-	<div class="col-sm-12 col-xs-12 ">
+<div [style.left]=move class="sidebar-wrapper" id="sidebar-wrapper" (click)=toggle() on-mouseleave="toggle()">
+
+	<div *ngIf=hideand class="col-sm-12 col-xs-12 ">
 		<div class="col-sm-4 col-xs-4 avatar" >
 			<img src="assets/navbar/person-flat.png" width="120%" alt="avatar" class="img-rounded">
 		</div>
 		<div class="col-sm-8 col-xs-8 profile-details">
-			<span>Kishanlal B J (Admin)</span>
+			<span>Kishanlal B J</span>
+			<span>352392</span>
 		</div>
 	</div>
 
-	<div  class="sidebar-nav">
+<div [style.float]=float  *ngIf=!hideand  class="small-nav">
+<li>
+<a href="#">
+	<!-- <span class="glyphicon glyphicon-user"></span> -->
+	<img src="assets/navbar/person-flat.png" width="26"  alt="logo">
+</a>
+</li>
+  <li>
+		<a href="#"><span class="glyphicon glyphicon-dashboard"></span></a>
+	</li>
+	<li>
+		<a href="#"><span class="glyphicon glyphicon-blackboard"></span></a>
+	</li>
+
+	<li>
+	<a href="#">
+		<span class="glyphicon glyphicon-picture"> </span>
+	</a>
+</li>
+
+<li>
+	<a href="#">
+		<span class="glyphicon glyphicon-education"></span>
+
+	</a>
+</li>
+
+<li>
+	<a href="#">
+		<span class="glyphicon glyphicon-briefcase"></span>
+	</a>
+</li>
+</div>
+
+
+	<div *ngIf=hideand  class="sidebar-nav">
 		<li>
 			<a href="#" >
-				<span class="glyphicon glyphicon-dashboard"> Dashboard</span>
+			<span class="glyphicon glyphicon-dashboard"> 	Dashboard</span>
 			</a>
 		</li>
 		<li>
@@ -65,6 +76,10 @@
 			<a href="#">
 				<span class="glyphicon glyphicon-briefcase"> Products</span>
 			</a>
-		</li> 
+		</li>
 	</div>
+
+
+
+</div>
 </div>

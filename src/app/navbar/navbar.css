@@ -1,0 +1,21 @@
+.navbar {
+	padding:10px;
+	overflow:hidden;
+	background:#fff;
+	background-color: none;
+	border-style: none;
+	border-color: transparent;
+	box-shadow:  0 1px 3px 0 rgba(0,0,0,0.3);
+	transition: height 0.3s;
+}
+.navbar-nav {
+	font-size: 120%;
+	font-weight: bold;
+	text-decoration: none;
+	display: block;
+
+}
+
+.navbar-brand{
+	padding-top: 10px;
+}

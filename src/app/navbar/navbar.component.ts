@@ -1,0 +1,22 @@
+import { Component } from '@angular/core'
+
+@Component({
+selector:'nav-bar',
+templateUrl:'navbar.component.html',
+styleUrls:['navbar.css']
+})
+
+export class NavbarComponent {
+public logourl = 'assets/navbar/wiprodigitallogo.png';
+public height;
+
+
+expand() {
+  if(this.height !='100px'){
+    this.height = "100px";
+  }else{
+    this.height = '70px';
+  }
+}
+
+}
