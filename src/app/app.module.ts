@@ -13,7 +13,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 
 	AppComponent,
 	NavbarComponent,
-	SideBarComponent,
 	HomeComponent
 	],
 	imports: [
