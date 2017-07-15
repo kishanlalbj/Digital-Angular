@@ -29,12 +29,14 @@ video {
 }
 
 #hero {
-	font-family: 'Roboto Mono', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	
 	font-weight:bolder;
 	font-size: 500%;
 }
 .sub-header {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+
 	font-size: 300%;
 }
 
@@ -53,19 +55,12 @@ video {
 }
 
 .para {
-	font-family: 'Source Sans Pro', sans-serif;
+	padding: 5%;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 150%;
 }
-.testimonials {
-	padding-top: 20%;
-	padding-top: 2%;
-}
-.speech {
-	padding-top: 5%;
-	font-size: 140%;
-}
 .about {
-	margin-top: 2%;
+	margin-top: -7%;
 	font-size: 120%;
 	font-weight: bold;
 
@@ -77,13 +72,37 @@ video {
 .avatar{
 	width: 70%;
 }
+hr {
+
+	margin-top: 22%;
+
+}
 @media only screen and (max-width: 768px) {
 	.avatar{
 		display:block;
 		margin:0 auto;
-		width: 100%;
+		/*width: 70%;*/
 
 	}
+}
+
+.panel {
+	border:none;
+	border-radius: none;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+	padding:0%;
+	min-height: 30%;
+	max-height: 40%;
+}
+.panel:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+}
+.testimony {
+	font-size:120%;
+	margin-top:2%;
+}
+.bg-color {
+	/*background-color: #dae8de;*/
 }
 /*@media only screen and (min-width: 768px) {
 	.avatar{
