@@ -1,0 +1,102 @@
+.programHeading{
+  margin-top: 100px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: serif;
+}
+.flex-container{
+  display: flex;
+  margin-top: 80px;
+  flex-wrap: wrap;
+  /*text-align: center;*/
+  justify-content: center;
+}
+.flex-item{
+  width: 300px;
+  height: 400px;
+  background-color: white;
+  margin: 25px;
+  box-shadow:  12px 15px 20px 0 rgba(46,61,73,.15);
+  transition: 0.3s;
+  border-radius: 8px;
+}
+.cardContentImmersive, .cardContentHybrid, .cardContentJavaAcademy, .cardContentSpark {
+  padding: 20px;
+  padding-top: 30px;
+}
+/*.cardContentHybrid{
+  padding: 20px;
+  padding-top: 30px;
+}*/
+.heading{
+  margin: 0;
+  color: black;
+}
+.flex-item:hover{
+  box-shadow: 5px 7px 13px 0 rgba(0,0,0,0.3);
+}
+.backgroundImage1{
+  height: 150px;
+  background-image: url('../../assets/programImages/fullStack1.jpg');
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  opacity: 0.65;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.backgroundImage2{
+  height: 150px;
+  background-image: url('../../assets/programImages/hybrid1.jpg');
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  opacity: 0.65;
+  /*background-repeat: no-repeat;*/
+  background-position: center;
+  background-size: cover;
+}
+.backgroundImage3{
+  height: 150px;
+  background-image: url('../../assets/programImages/javaImage.jpg');
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  opacity: 0.65;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.backgroundImage4{
+  height: 150px;
+  background-image: url('../../assets/programImages/sparkScala1.jpg');
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  opacity: 0.65;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.paragraph {
+  padding-top: 20px;
+}
+img{
+  padding: 5px;
+}
+.flex-item a:hover{
+  text-decoration: none;
+}
+/*body{
+  background-image: url('./images/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}*/
+/*.seeDetails{
+  text-transform: uppercase;*/
+  /*line-height: 60px;*/
+  /*background-color: lightblue;*/
+  /*color: blue;
+  border-radius: 0 0 8px 8px;
+  text-align: right;
+  padding-right: 20px;
+  margin-bottom: 20px;
+}*/
