@@ -7,11 +7,14 @@ import { SideBarComponent } from './sidebar/sidebar.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProgramComponent } from './programs/program.component';
+import { ShowcaseComponent } from './showcase/showcase.component'
 
 const routes: Routes = [
 { path: '', redirectTo: 'home', pathMatch: 'full' },
 { path: 'home', component: HomeComponent },
-{ path: 'programs', component: ProgramComponent }
+{ path: 'programs', component: ProgramComponent },
+{ path: 'showcase', component: ShowcaseComponent }
+
 ];
 
 @NgModule({
@@ -19,7 +22,8 @@ const routes: Routes = [
 	AppComponent,
 	NavbarComponent,
 	HomeComponent,
-	ProgramComponent
+	ProgramComponent,
+	ShowcaseComponent
 	],
 	imports: [
 	RouterModule.forRoot(routes),
