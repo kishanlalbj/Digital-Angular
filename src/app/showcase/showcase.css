@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: url("../../assets/showcase_img/background.jpg");
+  /*background-color: yellow;*/
+}
+
+.title {
+  text-align: center;
+  font-family: 'Oswald';
+  font-weight: 100;
+  font-size: 3.75rem;
+  letter-spacing: 5px;
+  background: linear-gradient(rgba(255, 0, 0, 0), #444, rgba(255, 0, 0, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0;
+}
+
+.project {
+    margin-bottom: 30px;
+    vertical-align: top;
+    margin-right: 30px;
+    float: left;
+    cursor: pointer;
+    width:100%;
+    /*border-radius: 20px;*/
+    /*box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.5);*/
+    box-shadow: 10px 15px 20px 0 rgba(46, 61, 73, 0.19);
+}
+
+.project figure {
+    position: relative;
+    display: inline-block;
+}
+
+.project figure img {
+    width: 100%;
+}
+
+.project figure:hover figcaption {
+    background:#d81e05;
+}
+.project figure:hover figcaption .project-details {
+    color: #fff;
+}
+
+.project figure:hover .actions {
+    /*background-color: rgba(216,30,5,.8);*/
+    background-color: rgba(66, 158, 244,.8);
+    top: 0%;
+    font-size:2.3em;
+    font-weight:700;
+    padding-top:10%;
+}
+
+.project figure .actions {
+    display: table-cell;
+    position: absolute;
+    bottom: 0px;
+    top: 50%;
+    left:0;
+    right:0;
+    z-index: 1;
+    opacity: 1;
+    background-color: rgba(29,29,29,.5);
+    -ms-transition: all .2s ease-out;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    color:#fff;
+    font-size:2em;
+    padding:2%;
+    font-weight:400;
+    text-align:center;
+    vertical-align: middle;
+}
+
+@media (min-width: 992px) {
+    .project figure .actions {
+    top: 60%;
+    left:0;
+    right:0;
+    font-size:1.5em;
+    padding:2%;
+}
+.project figure:hover .actions {
+    top: 0%;
+    font-size:2em;
+    padding-top:20%;
+}
+}
+
+@media (min-width: 1200px) {
+    .project figure .actions {
+    top: 65%;
+    left:0;
+    right:0;
+    font-size:1.1em;
+    padding:2%;
+    font-weight:400;
+}
+.project figure:hover .actions {
+    top: 0%;
+    font-size:1.5em;
+    padding-top:25%;
+}
+}

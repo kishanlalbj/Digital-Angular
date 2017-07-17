@@ -6,18 +6,20 @@ import { AppComponent } from './app.component';
 import { SideBarComponent } from './sidebar/sidebar.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
-
+import { ShowcaseComponent } from './showcase/showcase.component';
 
 const routes: Routes = [
 { path: '', redirectTo: 'home', pathMatch: 'full' },
-{ path: 'home', component: HomeComponent }
+{ path: 'home', component: HomeComponent },
+{ path: 'products', component: ShowcaseComponent }
 ];
 
 @NgModule({
 	declarations: [
 	AppComponent,
 	NavbarComponent,
-	HomeComponent
+	HomeComponent,
+	ShowcaseComponent
 	],
 	imports: [
 	RouterModule.forRoot(routes),
