@@ -1,49 +1,21 @@
-.home {
-	margin-top:70px;
-	background-color: green;
-	max-height: 50%;
-}
-
 
 .parallax {
-	margin-top: 70px;
+	margin-top: 80px;
 	z-index:1;
-
-	/* The image used */
-	background-image: url("../../assets/hero.jpg");
-
-	/* Set a specific height */
+	background-image: url("../../assets/home/hero.jpg");
 	height: 700px;
-
-	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
-video {
-	position:relative;
-	z-index:-1;
-	opacity: 0.8;
-	margin-top: 2%;
-}
-
-.custom-message {
-	position:relative;
-	color:#fff;
-	z-index:1;
-	margin-top: -10%;
-	top: -400px;
-}
-
 #hero {
 	font-family: 'Ubuntu', sans-serif;
 	font-weight:bolder;
 	font-size: 500%;
 }
 .sub-header {
-	font-family: 'Ubuntu', sans-serif;
+	font-family:  'Ubuntu', sans-serif;
 	font-size: 300%;
 }
 
@@ -58,58 +30,9 @@ video {
 
 .para {
 	padding: 5%;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 150%;
+	font-family: "Open Sans",sans-serif;
+	font-size: large;
 }
-.about {
-	margin-top: -7%;
-	font-size: 120%;
-	font-weight: bold;
-
-}
-.individual {
-	padding-top: 3%;
-}
-
-.avatar{
-	width: 70%;
-}
-hr {
-
-	margin-top: 22%;
-
-}
-@media only screen and (width: 768px) {
-	.avatar{
-		display:block;
-		margin:0 auto;
-	}
-	video {
-		/*display: none;*/
-	}
-	.custom-message{
-		margin-top: -20%;
-		top: -150px;
-	}
-}
-@media only screen and (max-width:425px) {
-	avatar{
-		display:block;
-		margin:0 auto;
-		width: 70%;
-		margin-left: 30%;
-	}
-	.bg-color{
-		margin-top: 5%;
-	}
-	video{
-		display: none;
-	}
-	.custom-message{
-		display: none;
-	}
-}
-
 
 .panel {
 	border:none;
@@ -122,16 +45,297 @@ hr {
 .panel:hover {
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
 }
-.testimony {
-	font-size:120%;
-	margin-top:2%;
+.speech-body {
+	margin-top: 3%;
+	font-size: medium;
+	font-family: "Open Sans",sans-serif;
 }
-.bg-color {
-	/*background-color: #dae8de;*/
-}
-/*@media only screen and (min-width: 768px) {
-	.avatar{
-		margin-top: 10%;
 
+@media only screen and (max-width: 768px) {
+	.img-circle{
+		width: 100%;
 	}
-	}*/
+	.speech-body{
+		font-size: inherit;
+	}
+
+	.custom-message{
+		margin-top: -20%;
+		top: -150px;
+	}
+}
+@media only screen and (max-width:425px) {
+
+	.home{
+		padding-top: 25%;
+	}
+
+	.custom-message{
+		display: none;
+	}
+}
+
+
+.digital-offerings {
+	background-color: #e8f4f7;
+	padding: 5%;
+	font-family:  'Open Sans', sans-serif;
+
+}
+.title {
+	font-size: xx-large;
+}
+.offering-details{
+	padding-top: 2%;
+	font-size:medium;
+	font-family: "Open Sans",sans-serif;
+
+}
+.lastContent {
+	background-color: #ffffff;
+	padding: 5%;
+	font-family: "Open Sans",sans-serif;
+}
+
+#circle {
+	width: 100%;
+	height: 140px;
+	-webkit-border-radius: 70%;
+	-moz-border-radius: 70%;
+	border-radius: 70%;
+	background: red;
+}
+#wallpaper1 {
+	width: 100%;
+	border-radius: 0%;
+	background-color: green;
+}
+#wallpaper2 {
+	width: 100%;
+	border-radius: 0%;
+	background-color: red;
+}
+#wallpaper3 {
+	width: 100%;
+	border-radius: 0%;
+	background-color: blue;
+}
+#wallpaper4 {
+	width: 100%;
+	border-radius: 0%;
+	background-color: pink;
+}
+.lastContentTitle{
+	font-size: larger;
+	font-weight: bold;
+
+}
+
+
+@import "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css";
+@import "http://fonts.googleapis.com/css?family=Roboto:400,500";
+
+@media only screen and (min-width:1024px) {
+	.info {
+		height: 190px;
+	}
+}
+@media only screen and (max-width:991px) and (min-width:768px) {
+	.info {
+		height: 210px;
+	}
+}
+@media only screen and (max-width:767px) and (min-width:486px){
+	.info {
+		height: 170px;
+	}
+}
+@media only screen and (max-width:485px) and (min-width:371px){
+	.info {
+		height: 220px;
+	}
+}
+@media only screen and (max-width:370px) {
+	.info {
+		height: 270px;
+	}
+}
+.box > .icon {
+	text-align: center;
+	position: relative;
+}
+.content2{
+	padding: 5%;
+}
+.box > .icon > .image {
+	position: relative;
+	z-index: 2;
+	margin: auto;
+	width: 88px;
+	height: 88px;
+	border: 8px solid white;
+	line-height: 88px;
+	border-radius: 50%;
+	background: #63B76C;
+	vertical-align: middle;
+}
+.box > .icon:hover > .image {
+	background: #333;
+}
+.box > .icon > .image > i {
+	font-size: 36px !important;
+	color: #fff !important;
+}
+.box > .icon:hover > .image > i {
+	color: white !important;
+}
+.box > .icon > .info {
+	margin-top: -24px;
+	background: rgba(0, 0, 0, 0.04);
+	border: 1px solid #e0e0e0;
+	padding: 15px 0 10px 0;
+}
+.box > .icon:hover > .info {
+	background: rgba(0, 0, 0, 0.04);
+	border-color: #e0e0e0;
+	color: white;
+}
+.box > .icon > .info > h3.title {
+	font-family: "Roboto",sans-serif !important;
+	font-size: 19px;
+	color: #222;
+	font-weight: 500;
+}
+.box > .icon > .info > p {
+	font-family: "Roboto",sans-serif !important;
+	font-size: 15px;
+	color: #666;
+	line-height: 1.5em;
+	margin: 20px;
+}
+.box > .icon:hover > .info > h3.title, .box > .icon:hover > .info > p, .box > .icon:hover > .info > .more > a {
+	color: #222;
+}
+.box > .icon > .info > .more a {
+	font-family: "Roboto",sans-serif !important;
+	font-size: 12px;
+	color: #222;
+	line-height: 12px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.box > .icon:hover > .info > .more > a {
+	color: #fff;
+	padding: 6px 8px;
+	background-color: #63B76C;
+}
+.box .space {
+	height: 30px;
+}
+
+
+
+#quote-carousel
+{
+	padding: 0 10px 30px 10px;
+	margin-top: 30px;
+}
+
+/* Control buttons  */
+#quote-carousel .carousel-control
+{
+	background: none;
+	color: #222;
+	font-size: 2.3em;
+	text-shadow: none;
+	margin-top: 30px;
+}
+/* Previous button  */
+#quote-carousel .carousel-control.left
+{
+	left: -12px;
+}
+/* Next button  */
+#quote-carousel .carousel-control.right
+{
+	right: -30px !important;
+}
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators
+{
+	right: 50%;
+	top: auto;
+	bottom: 0px;
+	margin-right: -19px;
+}
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li
+{
+	background: #c0c0c0;
+}
+#quote-carousel .carousel-indicators .active
+{
+	background: #333333;
+}
+#quote-carousel img
+{
+	width: 250px;
+	height: 100px
+}
+/* End carousel */
+
+.item blockquote {
+	border-left: none;
+	margin: 0;
+	min-height: 200px;	
+}
+.speech {
+	margin-left: -5%;
+}
+.item blockquote img {
+	margin-bottom: 10px;
+}
+
+.item blockquote p:before {
+	content: "\f10d";
+	font-family: 'Fontawesome';
+	float: left;
+	margin-right: 10px;
+}
+
+
+
+/**
+  MEDIA QUERIES
+  */
+
+  /* Small devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+  	#quote-carousel
+  	{
+  		margin-bottom: 0;
+  		padding: 0 40px 30px 40px;
+  	}
+
+  }
+
+  /* Small devices (tablets, up to 768px) */
+  @media (max-width: 768px) {
+
+  	/* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+
+  	#quote-carousel .carousel-indicators {
+  		bottom: -20px !important;
+  	}
+  	#quote-carousel .carousel-indicators li {
+  		display: inline-block;
+  		margin: 0px 5px;
+  		width: 15px;
+  		height: 15px;
+  	}
+  	#quote-carousel .carousel-indicators li.active {
+  		margin: 0px 5px;
+  		width: 20px;
+  		height: 20px;
+  	}
+  }

@@ -1,4 +1,8 @@
 <nav-bar></nav-bar>
 
 
-<router-outlet></router-outlet>
+<router-outlet (deactivate)= "onDeactivate()" ></router-outlet>
+
+<footer>
+	<app-footer></app-footer>
+</footer>

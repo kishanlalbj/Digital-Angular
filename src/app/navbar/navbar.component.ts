@@ -8,6 +8,5 @@ import { Component } from '@angular/core';
 })
 
 export class NavbarComponent {
-	public logourl = 'assets/navbar/wiprodigitallogo.png';
-	public height;
+	public logourl = 'assets/navbar/wiproDigital.png';
 }

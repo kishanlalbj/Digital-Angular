@@ -1,0 +1,41 @@
+.register-wrapper{
+	min-height: 100%;
+}
+
+.title {
+	font-size: xx-large;
+}
+.register-details {
+	padding: 5%;
+	font-size:medium;
+}
+.parallax {
+	margin-top: 80px;
+	background-image: url('../../assets/register/register.jpg');
+	z-index:1;
+	background-color: #3a3a3a;
+	background-position: center;
+
+}
+#hero {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight:bolder;
+	font-size: 500%;
+}
+.sub-header {
+	font-family:  'Ubuntu', sans-serif;
+	font-size: 300%;
+}
+
+.display-content {
+	padding: 10%;
+	color:#fff;
+}
+.btn-custom{
+	background: white;
+	color: black;
+	border-color: white;
+}
+.para {
+	font-family: "Open Sans",sans-serif;
+}

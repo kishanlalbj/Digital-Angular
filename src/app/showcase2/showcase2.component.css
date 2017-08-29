@@ -1,0 +1,36 @@
+.showcase-wrapper {
+	margin-top:80px;
+}
+.intro {
+	padding:3%;
+	font-family: "Open Sans",sans-serif;
+	font-size: normal;
+}
+.showcase-hero {
+	font-size: xx-large;
+	font-family: "Open Sans",sans-serif;
+}
+.panel {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+}
+.panel:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+}
+.quiz{
+	background-image: url('../../assets/showcase2/quiz.jpg');
+	height: 160px;
+	width: 100%;
+	opacity: 0.80;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.tattva{
+	background-image: url('../../assets/showcase2/tattva.jpg');
+	height: 160px;
+	opacity: 0.80;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
