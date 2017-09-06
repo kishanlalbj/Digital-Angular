@@ -1,0 +1,32 @@
+<div class="contactus-wrapper container">
+  <p>
+    contactus works!
+  </p>
+  <div class="forms-group" >
+
+    <div class="col-md-4">
+      <label for="name">Name</label>
+      <input class="form-control" type="text" name="name" [(ngModel)]="UserDetails.name" required>
+    </div>
+
+<div class="col-md-4">
+    <label for="email">E-Mail</label>
+    <input class="form-control" type="text" name="email" [(ngModel)]="UserDetails.email" required>
+</div>
+
+   <div class="col-md-4">
+     <label for="subject">Subject</label>
+     <input class="form-control" type="text" name="subject" [(ngModel)]="UserDetails.subject" required>
+  </div>
+
+<div class="col-md-12">
+<label for="message">Message</label>
+<textarea class="form-control" name="message" rows="8" cols="80" [(ngModel)]="UserDetails.message"></textarea>
+</div>
+<br>
+<button type="button" class="btn btn-primary" name="submitbutton" (click)=submitForm()>Submit</button>
+
+{{something.message}}
+  </div>
+  <br>
+</div>

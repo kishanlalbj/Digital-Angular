@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
+import { HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { SideBarComponent } from './sidebar/sidebar.component';
@@ -19,14 +21,20 @@ import { FooterComponent } from './footer/footer.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { RegisterComponent } from './register/register.component';
 import { Showcase2Component } from './showcase2/showcase2.component';
-
-
+import { DataService } from './data.service';
+import { ContactusService} from './contactus.service';
+import { ContactusComponent } from './contactus/contactus.component';
+import { UserService } from './user.service';
+import { AuthguardGuard } from './authguard.guard';
 
 const routes: Routes = [
-{ path: '', redirectTo: 'home', pathMatch: 'full' },
-{ path: 'home', component: HomeComponent },
+{ path: '', redirectTo: 'login', pathMatch: 'full' },
+{ path: 'home',
+canActivate:[AuthguardGuard],
+  component: HomeComponent 
+},
 { path: 'programs', component: ProgramComponent },
-{ path: 'showcase', component: ShowcaseComponent },
+// { path: 'showcase', component: ShowcaseComponent },
 { path: 'programs/fullStackProductEngineering', component: FullStackComponent },
 { path: 'programs/fullStackOnline', component: FullStackOnlineComponent },
 { path: 'programs/javaFullStack', component: javaComponent },
@@ -36,7 +44,8 @@ const routes: Routes = [
 { path: 'tattva', component: TattvaComponent },
 { path: 'login', component: LoginComponent },
 { path: 'gallery', component: GalleryComponent },
-{ path: 'showcase2',component: Showcase2Component }
+{ path: 'showcase2',component: Showcase2Component },
+{ path: 'contactus',component: ContactusComponent }
 ];
 
 @NgModule({
@@ -56,15 +65,22 @@ const routes: Routes = [
 	LoginComponent,
 	GalleryComponent,
 	FooterComponent,
-	Showcase2Component
+	Showcase2Component,
+	ContactusComponent
 	],
 	imports: [
 	RouterModule.forRoot(routes),
 	BrowserModule,
-	BrowserAnimationsModule
+	BrowserAnimationsModule,
+	FormsModule,
+	HttpModule
 
 	],
-	providers: [],
+	providers: [DataService,
+				ContactusService,
+				UserService,
+				AuthguardGuard
+			],
 	bootstrap: [AppComponent]
 })
 export class AppModule { }
